@@ -9,6 +9,7 @@ st.set_page_config(page_title='SuperStore!!!',page_icon=':bar_chart',layout='wid
 
 st.title(":bar_chart: Sample SuperStore EDA")
 
+data=pd.read_csv("Superstore.csv")
 
 st.markdown('<style>div.block-container{pandding-top:lrem;}</style>',unsafe_allow_html=True)
 
