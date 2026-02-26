@@ -13,14 +13,14 @@ data=pd.read_csv("Superstore.csv")
 
 st.markdown('<style>div.block-container{pandding-top:lrem;}</style>',unsafe_allow_html=True)
 
-fl = st.file_uploader(":file_folder:Upload a file",type=(["csv","txt","xlsx","xls"]))
-if fl is not None:
- filename =fl.name
- st.write(filename)
- df=pd.read_csv(filename,encoding='ISO-8859-1')
-else:
- os.chdir(r"C:\Programmings\Streamlit\SuperStore")
- df = pd.read_csv('Superstore.csv', encoding='ISO-8859-1')
+# fl = st.file_uploader(":file_folder:Upload a file",type=(["csv","txt","xlsx","xls"]))
+# if fl is not None:
+#  filename =fl.name
+#  st.write(filename)
+#  df=pd.read_csv(filename,encoding='ISO-8859-1')
+# else:
+#  os.chdir(r"C:\Programmings\Streamlit\SuperStore")
+#  df = pd.read_csv('Superstore.csv', encoding='ISO-8859-1')
  
  
 col1, col2 =st.columns((2))
